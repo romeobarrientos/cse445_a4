@@ -1,0 +1,47 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="https://github.com/romeobarrientos/cse445_a4" targetNamespace="https://github.com/romeobarrientos/cse445_a4" elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+	<xsd:annotation>
+	<xsd:documentation xml:lang="en">
+		Distributed Software Assignment 4
+	</xsd:documentation>
+</xsd:annotation>
+
+	<!-- Root -->
+	<xsd:element name="NationalParks">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="NationalPark" minOccurs="1" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<!-- Name, phone,address, optional rating-->
+	<xsd:element name="NationalPark">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="Name" minOccurs="1" maxOccurs="1"/>
+				<xsd:element ref="Phone" minOccurs="1" maxOccurs="unbounded"/>
+				<xsd:element ref="Address" minOccurs="1" maxOccurs="1"/>
+			</xsd:sequence>
+			<xsd:attribute name="Rating" type="xsd:decimal" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="Name" type="xsd:string"/>
+	<xsd:element name="Phone" type="xsd:string"/>
+
+	<!-- address, and required airport-->
+	<xsd:element name="Address">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Number" type="xsd:string"/>
+				<xsd:element name="Street" type="xsd:string"/>
+				<xsd:element name="City" type="xsd:string"/>
+				<xsd:element name="State" type="xsd:string"/>
+				<xsd:element name="Zip" type="xsd:string"/>
+			</xsd:sequence>
+			<xsd:attribute name="NearestAirport" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>

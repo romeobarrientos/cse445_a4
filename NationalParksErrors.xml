@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ERROR 1: root element is NationalPark instead of NationalParks -->
+<NationalPark xmlns="https://github.com/romeobarrientos/cse445_a4">
+
+  <NationalPark Rating="4.9">
+    <Name>Grand Canyon</Name>
+    <Phone>928-638-7496</Phone>
+    <Phone>888-297-2757</Phone>
+    <Phone>866-499-2574</Phone>
+    <Address NearestAirport="FlagStaff">
+      <Number>8</Number>
+      <Street>S Entrance Road</Street>
+      <City>Grand Canyon</City>
+      <State>AZ</State>
+      <Zip>86023</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.8">
+    <Name>Yellowstone</Name>
+    <Phone>307-344-7381</Phone>
+    <Phone>307-344-2160</Phone>
+    <Address NearestAirport="Bozeman">
+      <Number>2</Number>
+      <Street>Officers Row</Street>
+      <City>Yellowstone National Park</City>
+      <State>WY</State>
+      <Zip>82190</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.8">
+    <Name>Independence National Historic Park</Name>
+    <Phone>215-965-2305</Phone>
+    <!-- ERROR 2: required attribute NearestAirport is missing -->
+    <Address>
+      <Number>143</Number>
+      <Street>South 3rd Street</Street>
+      <City>Philadelphia</City>
+      <State>PA</State>
+      <Zip>19106</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark>
+    <Name>Zion</Name>
+    <Phone>435-772-3256</Phone>
+    <Address NearestAirport="St. George">
+      <Number>1</Number>
+      <Street>Zion Park Boulevard</Street>
+      <City>Springdale</City>
+      <State>UT</State>
+      <Zip>84767</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.9">
+    <Name>Badlands</Name>
+    <!-- ERROR 3: Phone element is missing -->
+    <Address NearestAirport="Rapid City">
+      <Number>25216</Number>
+      <Street>Ben Reifel Pl</Street>
+      <City>Interior</City>
+      <State>SD</State>
+      <Zip>57750</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark>
+    <!-- ERROR 5: two names for one national park -->
+    <Name>Rocky Mountain</Name>
+    <Name>Rocky Mountain National Park</Name>
+    <Phone>970-586-1206</Phone>
+    <Phone>970-586-1242</Phone>
+    <Address NearestAirport="Denver">
+      <Number>1000</Number>
+      <Street>US Highway 36</Street>
+      <City>Estes Park</City>
+      <State>CO</State>
+      <Zip>80517</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.8">
+    <Name>Acadia</Name>
+    <Phone>207-288-3338</Phone>
+    <Address NearestAirport="Bangor">
+      <Number>25</Number>
+      <Street>Visitor Center Road</Street>
+      <City>Bar Harbor</City>
+      <State>ME</State>
+      <Zip>04609</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark>
+    <Name>Grand Teton</Name>
+    <Phone>307-739-3399</Phone>
+    <Address NearestAirport="Jackson Hole">
+      <Number>103</Number>
+      <Street>Headquarters Loop</Street>
+      <City>Moose</City>
+      <State>WY</State>
+      <Zip>83012</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.9">
+    <Name>Glacier</Name>
+    <Phone>406-888-7800</Phone>
+    <Address NearestAirport="Kalispell">
+      <Number>64</Number>
+      <Street>Grinnell Drive</Street>
+      <City>West Glacier</City>
+      <State>MT</State>
+      <Zip>59936</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.7">
+    <Name>Olympic</Name>
+    <Phone>360-565-3130</Phone>
+    <Address NearestAirport="Seattle">
+      <Number>3002</Number>
+      <Street>Mount Angeles Road</Street>
+      <City>Port Angeles</City>
+      <State>WA</State>
+      <Zip>98362</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark>
+    <Name>Joshua Tree</Name>
+    <Phone>760-367-5500</Phone>
+    <Address NearestAirport="Palm Springs">
+      <Number>74485</Number>
+      <Street>National Park Drive</Street>
+      <City>Twentynine Palms</City>
+      <State>CA</State>
+      <Zip>92277</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.7">
+    <Name>Mount Rainier</Name>
+    <Phone>360-569-2211</Phone>
+    <!-- ERROR 4: Address element has no closing tag-->
+    <Address NearestAirport="Seattle">
+      <Number>55210</Number>
+      <Street>238th Avenue</Street>
+      <City>East Ashford</City>
+      <State>WA</State>
+      <Zip>98304</Zip>
+  </NationalPark>
+
+</NationalPark>
